@@ -1,6 +1,6 @@
 /* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   Why is this necessary???
+   HTML5 CSS Reset Minified - Jordan Hochman
+   Why is this necessary??? (With help from Eric Meyer)
    ========================================================================== */
 
 /*
@@ -118,7 +118,7 @@ canvas{
 }
 
 
-/* ---- Jay's container ---- */
+/* ---- Other container ---- */
 #header {
 	margin: 30px;
 }
