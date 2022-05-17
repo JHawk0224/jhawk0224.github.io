@@ -45,7 +45,7 @@ body{
 }
 
 canvas{
-  display:block;
+  /*display:block;*/
   vertical-align:bottom;
 }
 
@@ -74,7 +74,7 @@ canvas{
 
 #stats,
 .count-particles{
-  -webkit-user-select: none;
+  /*-webkit-user-select: none;*/
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -170,9 +170,5 @@ a:hover {
 
 .github:hover {
 	color: #f8f8f8;
-}
-
-.email {
-
 }
 
