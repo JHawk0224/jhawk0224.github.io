@@ -1,6 +1,5 @@
 /* =============================================================================
-   HTML5 CSS Reset Minified - Jordan Hochman
-   Why is this necessary??? (With help from Eric Meyer)
+   HTML5 CSS Reset Minified
    ========================================================================== */
 
 /*
@@ -41,14 +40,12 @@ body{
 	font-weight: 400;
 	line-height: 1.5;
 	color: white;
-	max-width: 800px;
 }
 
 canvas{
   /*display:block;*/
   vertical-align:bottom;
 }
-
 
 /* ---- stats.js ---- */
 
@@ -112,12 +109,6 @@ canvas{
   */
 }
 
-#overlay {
-  position: relative;
-  color: white;
-}
-
-
 /* ---- Other container ---- */
 #header {
 	margin: 30px;
@@ -132,31 +123,31 @@ canvas{
 	font-size: 1.2em;
 }
 
-p {
-	line-height: 1.5;
-}
-
 ul {
 	list-style-type: none;
 	margin: -.8em auto;
 	font-weight: 300;
 }
 
+li {
+  pointer-events: all;
+}
+
 a {
-    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	transition: border-bottom-color 0.2s ease, color 0.2s ease;
-	color: deepskyblue;
+	color: rgb(255, 37, 37);
 	text-decoration: none;
 }
 
 a:hover {
-    -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	transition: border-bottom-color 0.2s ease, color 0.2s ease;
-	color: lightskyblue;
+	color: rgb(208, 22, 41);
 }
 
 .social a {
@@ -172,3 +163,261 @@ a:hover {
 	color: #f8f8f8;
 }
 
+/* Overlay */
+#overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0!important;
+  padding: 0!important;
+  color: white;
+  pointer-events: none;
+}
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  background-color: #212120;
+  pointer-events: all;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: #fff;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #141414;
+  color: #fff;
+}
+
+.dropdown button.active {
+  background-color: #141414;
+  color: #fff;
+}
+
+.dropdown-content button.active {
+  background-color: #bbb;
+  color: black;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  float: none !important;
+  font-size: 15px;
+  padding: 12px 24px;
+  margin: 0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown .tablinks {
+  float: none;
+  color: black;
+  padding: 12px 24px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#personal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 300px;
+  width: fit-content;
+  transform: translate(0, +50%);
+}
+
+.info-box {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+  color: white;
+}
+
+p {
+	line-height: 1.5;
+  width: fit-content;
+  pointer-events: all;
+}
+
+h1, h2, h3 {
+  font-family: sans-serif; /*Verdana, */
+  width: fit-content;
+  pointer-events: all;
+}
+
+#projects h1 {
+  font-size: 75px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+#dpn-2 h1 {
+  font-size: 75px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+#projects h3 {
+  margin: auto;
+}
+
+#photo {
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  pointer-events: all;
+}
+
+.search {
+  float: right !important;
+  color:#fff!important;
+  padding: 12px 24px !important;
+}
+
+.search:hover {
+  background-color:#f44336 !important;
+}
+
+/* PONG */
+.board {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: rgba(255, 255, 255, .2);*/
+}
+
+.ball {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: red;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  opacity: 0;
+}
+
+.paddle {
+  height: 150px;
+  width: 20px;
+  position: fixed;
+  background-color: red;
+  opacity: .2;
+}
+
+.paddle_1 {
+  top: calc(50vh - 75px);
+  left: calc(7.5vw - 10px);
+}
+
+.paddle_2 {
+  top: calc(50vh - 75px);
+  right: calc(7.5vw + 10px);
+}
+
+.score {
+  position: relative;
+  height: 20px;
+  width: fit-content;
+  color: red;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fade1 {
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn1;
+}
+
+.fade2 {
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn2;
+}
+
+@keyframes fadeIn1 {
+  from {opacity: .2;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn2 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-  <meta charset="utf-8">
-  <title>Jordan's Website</title>
-  <meta name="description" content="Personal website of Jordan Hochman">
-  <meta name="author" content="Jordan Hochman">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!--<link rel="stylesheet" media="screen" href="css/style.css">-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
-  <!--<link rel="shortcut icon" href="/assets/favicon/favicon-32x32.png">-->
-  <link rel="stylesheet" href="./style.css" />
-</head
+    <meta charset="utf-8">
+    <title>Jordan's Website</title>
+    <meta name="description" content="Personal website of Jordan Hochman">
+    <meta name="author" content="Jordan Hochman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">\
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <base target="_blank">
+    <!--<link rel="shortcut icon" href="/assets/favicon/favicon-32x32.png">-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
 <body>
-
-<!-- particles.js container -->
-<div id="particles-js">
-    <canvas class="particles-js-canvas-el" width="2632" height="892" style="width: 100%; height: 100%;"></canvas>
-</div>
-
-<div id="overlay">
-<header id="header">
-    <h1 class="tagline"><u>Jordan Hochman</u></h1>
-    <h2>Programmer, Math Enthusiast, Developer . . .</h2>
-    <div class="stuff">
-        <p class="social"><a class="github" href="http://github.com/jhawk0224" target="_blank"><i class="fa fa-github fa-2x"></i></a><a class="email" href="jhawk111@icloud.com"><i class="fa fa-send-o fa-2x"></i></a></p>
-        <p>University of Pennsylvania</p>
-        <p>Currently, I am</p>
-        <ul class="currently">
-            <li>A sophomore at <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a></li>
-        </ul>
-        <p>Outside the classroom, I am</p>
-        <ul class="currently">
-            <li>A programmer</li>
-        </ul>
-        <br>
-        <p>Academics</p>
-        <ul class="work">
-            <li>Graduation: May 2025</li>
-        </ul>
-        <p>Select Projects</p>
-        <ul class="projects">
-            <li>Coming Soon!</li>
-        </ul>
-        <p>Select Achievements (lol these are old)</p>
-        <ul class="initiatives">
-            <li>AIME Qualifier</a></li>
-            <li>Qualified for Florida ARML team</li>
-            <li>Multiple top 10 placings in Mu Alpha Theta</li>
-        </ul>
+    <!-- particles.js container -->
+    <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="2632" height="892" style="width: 100%; height: 100%;"></canvas>
     </div>
-</header>
-</div>
+  
+  <div id="overlay">
+              <!-- Tab links -->
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">HOME</button>
+                <button class="tablinks" onclick="openTab(event, 'projects')">PROJECTS</button>
+                <div class="dropdown">
+                    <button class="dropbtn">OTHER <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <button class="tablinks" onclick="openTab(event, 'dpn-1'); init()">Pong</button>
+                        <button class="tablinks" onclick="openTab(event, 'dpn-2')">Coming Soon!</button>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="search" target="_self"><i class="fa fa-search"></i></a>
+              </div>
 
-<!-- Import Particles.js and app.js files -->
-<script src="./particles.js"></script>
-<script src="./app.js"></script>
+    <!-- Tab content -->
+    <div id="home" class="tabcontent">
+        <div id="personal">
+            <img src="assets/pfp.png" id="photo">
+            <div id="short-desc">
+                <h1>JORDAN HOCHMAN</h1>
+                <h3>Developer • Creator • Student</h3>
+            </div>
+        </div>
+        <div class="info-box">
+            <h3>Hi! I'm Jordan.</h3>
+            <p>I am currently a sophomore at the University of Pennsylvania,
+                and I'm pursuing a BSE in Computer Science, a second major in Mathematics, and a minor in Statistics from Wharton!
+            </p>
+            <p>
+                I am also a member on the board of the <a href="https://pennmathsociety.weebly.com/">Penn Undergraduate Math Society</a>, 
+                and I'm very interested in machine learning. In my free time, I also love to playing pickleball, making educational YouTube videos, and playing the piano!
+            </p>
+            <p>
+                You can email me at <a href="mailto: jhawkman@seas.upenn.edu">jhawkman@seas.upenn.edu</a>, check out my <a href="https://www.linkedin.com/in/jordan-hochman-692498112">LinkedIn</a>, follow me on <a href="https://www.instagram.com/jhawk0224/">Instagram</a> or <a href="https://twitter.com/JHawk0224">Twitter</a>, or look at my <a href="https://github.com/jhawk0224">Github</a> and 
+                <a href="https://www.youtube.com/c/HawkMath/featured">YouTube</a> channel, <a href="https://www.youtube.com/c/HawkMath/featured">Hawk Math</a>, to find out more about me!
+            </p>
+        </div>
+    </div>
+    
+    <div id="projects" class="tabcontent">
+        <h1>Coming Soon!</h1>
+        <h3>In the meantime, check out my <a href="https://github.com/jhawk0224">Github</a>!</h3>
+    </div>
 
-</body></html>
+    <div id="dpn-1" class="tabcontent">
+        <!--<h3>Coming Soon!</h3>-->
+        <div class="board">
+            <div class="ball"></div>
+            <div class="paddle_1 paddle"></div>
+            <div class="paddle_2 paddle"></div>
+            <h1 class="score">Press Space or Enter!</h1>
+        </div>
+    </div>
+
+    <div id="dpn-2" class="tabcontent">
+        <h1>Coming Soon!</h1>
+    </div>
+  </div>
+
+    <!-- Import Particles.js and app.js files -->
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="./pong.js"></script>
+    <script>document.getElementById("defaultOpen").click();</script>
+</body>
+</html>
