@@ -179,7 +179,6 @@ a:hover {
 .tab {
   width: 100%;
   overflow: hidden;
-  /* border: 1px solid #ccc; */
   background-color: #212120;
   pointer-events: all;
 }
@@ -189,7 +188,7 @@ a:hover {
   background-color: inherit;
   color: #fff;
   font-family: Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   float: left;
   border: none;
@@ -230,7 +229,7 @@ a:hover {
   border: none;
   outline: none;
   float: none !important;
-  font-size: 15px;
+  font-size: 16px;
   padding: 12px 24px;
   margin: 0;
 }
@@ -354,9 +353,12 @@ h1, h2, h3 {
 /* PONG */
 .board {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100vw;
-  /*background-color: rgba(255, 255, 255, .2);*/
+  /*background-color: rgba(255, 255, 255, .2);
+  border:rgb(208, 22, 41);
+  border-radius: 3px;
+  border-style: solid;*/
 }
 
 .ball {
